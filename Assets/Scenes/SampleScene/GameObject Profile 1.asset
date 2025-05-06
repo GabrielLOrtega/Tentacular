@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42987be1fde1d9e43aa47deffa5ec3e6, type: 3}
-  m_Name: ScoreManager
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: GameObject Profile 1
   m_EditorClassIdentifier: 
-  score: 0
-  resetScore: 0
-  endScore: 3
-  trash: []
+  components: []
