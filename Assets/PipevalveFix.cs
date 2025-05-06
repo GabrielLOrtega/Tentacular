@@ -10,8 +10,9 @@ public class PipevalveFix : MonoBehaviour
     public Animator animator; // Reference to animation
     public TextMeshProUGUI interactionText; // Reference to TextMeshPro UI element
     public Camera playerCamera; // Reference to the player's camera
+    public CollectedItems score;
 
-    private bool isFixed = false;
+    private bool isFixed = false;
     public float fixTime = 3f; // Time required to fix the pipe valve
     private float currentFixTime = 0f; // Tracks fixing progress
 
@@ -54,7 +55,8 @@ public class PipevalveFix : MonoBehaviour
     void FixPipeValve()
     {
         isFixed = true;
-
+        score.score += 1;
+         
         // Play fixing animation
         // animator.SetTrigger("Fix");
 

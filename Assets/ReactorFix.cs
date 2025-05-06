@@ -6,12 +6,13 @@ using TMPro; // Add this to use TextMeshPro
 
 public class ReactorFix : MonoBehaviour
 {
-    public ParticleSystem sparks; // Reference to sparking effect
+    //public ParticleSystem sparks; // Reference to sparking effect
     public Animator animator; // Reference to animation
     public TextMeshProUGUI interactionText; // Reference to TextMeshPro UI element
     public Camera playerCamera; // Reference to the player's camera
+    public CollectedItems score;
 
-    private bool isFixed = false;
+    private bool isFixed = false;
     public float fixTime = 3f; // Time required to fix the reactor
     private float currentFixTime = 0f; // Tracks fixing progress
 
@@ -54,13 +55,13 @@ public class ReactorFix : MonoBehaviour
     void FixReactor()
     {
         isFixed = true;
-
+        score.score += 1;
         // Play fixing animation
         // animator.SetTrigger("Fix");
 
         // Stop sparking effect
-        sparks.Stop();
-        Debug.Log("Reactor Sparks should be stopped now.");
+        //sparks.Stop();
+        //Debug.Log("Reactor Sparks should be stopped now.");
 
         Debug.Log("Reactor Fully Fixed!");
 

@@ -21,13 +21,13 @@ public class FirstPersonCamera : MonoBehaviour
 
     }
 
-    
+
     void Update()
     {
         // Collect Mouse Input
 
-        float inputX = Input.GetAxis("Mouse X")*mouseSensitivity;
-        float inputY = Input.GetAxis("Mouse Y")*mouseSensitivity;
+        float inputX = Input.GetAxis("Mouse X") * mouseSensitivity;
+        float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
 
         // Rotate the Camera around its local X axis
 
@@ -39,6 +39,6 @@ public class FirstPersonCamera : MonoBehaviour
         // Rotate the Player Object and the Camera around its Y axis
 
         player.Rotate(Vector3.up * inputX);
-       
+
     }
 }
