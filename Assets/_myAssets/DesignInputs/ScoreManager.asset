@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42987be1fde1d9e43aa47deffa5ec3e6, type: 3}
   m_Name: ScoreManager
   m_EditorClassIdentifier: 
-  score: 0
+  score: 3
   resetScore: 0
-  endScore: 3
+  endScore: 4
   trash: []
